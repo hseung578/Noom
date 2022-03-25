@@ -1,0 +1,236 @@
+@import "reset.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  color: rgb(255, 140, 0);
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-top: 10px;
+  height: 50px;
+}
+
+main {
+  width: 100%;
+}
+
+#roomForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#roomname {
+  width: 200px;
+  height: 30px;
+  border: 2px solid rgb(255, 164, 53);
+  border-radius: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#roomname:focus {
+  outline: none;
+  border-radius: 10px;
+}
+
+#roomname::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+#roombtn {
+  width: 204px;
+  height: 34px;
+  background-color: rgb(255, 164, 53);
+  border: none;
+  border-radius: 10px;
+  color: bisque;
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#myStream {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myFaceSpace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myFace {
+  border: 2px solid rgb(255, 164, 53);
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#peersFace {
+  border: 2px solid rgb(255, 164, 53);
+  border-radius: 10px;
+}
+
+#cameras {
+  width: 100%;
+  height: 20px;
+  border: 2px solid rgb(255, 164, 53);
+  border-top: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#control {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#ctlAudio {
+  width: 75px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: bisque;
+  border: 1px solid bisque;
+  border-radius: 10px;
+}
+
+#audioText {
+  color: rgb(255, 140, 0);
+  width: 40px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#ctlCamera {
+  width: 88px;
+  height: 18;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: bisque;
+  border: 1px solid bisque;
+  border-radius: 10px;
+}
+
+#cameraText {
+  color: rgb(255, 140, 0);
+  width: 53px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+#audio,
+#camera {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(255, 164, 53);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.btnColor {
+  background-color: rgb(255, 164, 53);
+}
+
+#message {
+  width: 400px;
+  height: 620px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+#chatroom {
+  width: 400px;
+  height: 40px;
+  background-color: rgb(255, 164, 53);
+  color: bisque;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 550px;
+  overflow-y: auto;
+}
+
+#messageForm {
+  width: 100%;
+  height: 30px;
+}
+
+#text {
+  width: 316px;
+  height: 26px;
+  border: 2px solid rgb(255, 164, 53);
+  border-radius: 10px;
+  padding: 0px 15px 0px 15px;
+}
+
+#text:focus {
+  outline: none;
+  border-radius: 10px;
+}
+
+#send {
+  width: 50px;
+  height: 30px;
+  border: 1px solid rgb(255, 164, 53);
+  border-radius: 5px;
+  color: rgb(255, 228, 196);
+  background-color: rgb(255, 164, 53);
+}
+
+li {
+  margin: 15px 15px 0px 15px;
+}
+
+.divMsg {
+  width: auto;
+  background-color: rgb(255, 164, 53);
+  color: bisque;
+  border: 1px solid rgb(255, 164, 53);
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+  word-break: break-all;
+}
+
+.spanMsg {
+  display: inline-block;
+  background-color: rgb(255, 164, 53);
+  color: bisque;
+  border: 1px solid rgb(255, 164, 53);
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+}

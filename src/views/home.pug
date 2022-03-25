@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="stylesheet", href="/public/css/style.css")
+    body 
+        header
+            h1 Noom
+        main
+            div#welcome
+                form#roomForm
+                    input#roomname(placeholder="room name", required, type="text")
+                    button#roombtn Enter room
+            div#call(class="hidden")
+                div#wrapper
+                    div#myStream
+                        div#myFaceSpace
+                            video#myFace(autoplay,playsinline, width="400". height="400")
+                            select#cameras
+                        div#control
+                            div#ctlAudio
+                                span#audioText audio
+                                button#audio(class="btnColor")
+                            div#ctlCamera
+                                span#cameraText camera
+                                button#camera(class="btnColor")
+                        div#peersFaceSpace
+                            video#peersFace(autoplay,playsinline, width="400". height="400")
+                    div#message
+                        div#chatroom Chat Room
+                        ul
+                        form#messageForm
+                            input#text(placeholer="send a message", required, type="text")
+                            button#send Send
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js")
